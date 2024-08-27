@@ -5,49 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <title>Document</title>
+    <title>Pokemon Finder</title>
 </head>
 
 <body>
-    <input id="search-input" type="text" value="" required>
-    <span><button id="search-button">Search</button></span>
-    <div id="the-pokemon">
-        <span id="pokemon-name"></span>
-        <span id="pokemon-id"></span><br>
-        <div id="images"></div>
-        <span id="weight"></span>
-        <span id="height"></span>
-        <div id="types"></div>
-        <table>
-            <tr>
-                <th>Base</th>
-                <th>Stats</th>
-            </tr>
-            <tr>
-                <td>HP:</td>
-                <td id="hp"></td>
-            </tr>
-            <tr>
-                <td>Attack:</td>
-                <td id="attack"></td>
-            </tr>
-            <tr>
-                <td>Defense:</td>
-                <td id="defense"></td>
-            </tr>
-            <tr>
-                <td>Sp. Attack</td>
-                <td id="special-attack"></td>
-            </tr>
-            <tr>
-                <td>Sp. Defense</td>
-                <td id="special-defense"></td>
-            </tr>
-            <tr>
-                <td>Speed:</td>
-                <td id="speed"></td>
-            </tr>
-        </table>
+    <div class="container">
+        <h1>Pokémon Search App</h1>
+        <div class="bg-card">
+            <div class="search-part">
+                <p>Search for Pokémon Name or ID:</p>
+                <input id="search-input" type="text" value="" required>
+                <span><button id="search-button">Search</button></span>
+            </div>
+            <div id="the-pokemon">
+                <div class="info">
+                    <span id="pokemon-name"></span>
+                    <span id="pokemon-id"></span><br>
+                    <span id="weight"></span>
+                    <span id="height"></span>
+                    <div id="images">Waiting for any input...</div>
+                    <div id="types"></div>
+                </div>
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Base</th>
+                            <th>Stats</th>
+                        </tr>
+                        <tr>
+                            <td>HP</td>
+                            <td id="hp"></td>
+                        </tr>
+                        <tr>
+                            <td>Attack</td>
+                            <td id="attack"></td>
+                        </tr>
+                        <tr>
+                            <td>Defense</td>
+                            <td id="defense"></td>
+                        </tr>
+                        <tr>
+                            <td>Sp. Attack</td>
+                            <td id="special-attack"></td>
+                        </tr>
+                        <tr>
+                            <td>Sp. Defense</td>
+                            <td id="special-defense"></td>
+                        </tr>
+                        <tr>
+                            <td>Speed</td>
+                            <td id="speed"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="./script.js"></script>
